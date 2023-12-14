@@ -1,4 +1,4 @@
-# movie-watchlist
+# Movie Watchlist
 
 ## Summary
 
@@ -9,4 +9,4 @@
 
 ## Sources Used:
 
-- Frontend Mentor - (https://icones.js.org/collection/fa?s=film)
+- Font Awesome - (https://icones.js.org/collection/fa)
