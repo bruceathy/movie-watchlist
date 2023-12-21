@@ -9,4 +9,5 @@
 
 ## Sources Used:
 
-- Font Awesome - (https://icones.js.org/collection/fa)
+- Font Awesome - (https://fontawesome.com)
+- Google Fonts - (https://fonts.google.com/)
