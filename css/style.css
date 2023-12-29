@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #3b3b3b;
+  background-color: #4066ff;
   overscroll-behavior: none;
   font-family: "Oswald", sans-serif;
 }
@@ -18,10 +18,10 @@ a {
 }
 
 header {
-  background-image: linear-gradient(0deg, #3b3b3a 0%, #000 100%);
-  background-repeat: no-repeat;
-  padding: 8rem 0 2rem 0;
+  background-image: linear-gradient(0deg, #4066ff 0%, #000 100%);
+  padding: 7.2rem 0 1rem 0;
   color: #fff;
+  top: 0;
   position: fixed;
   width: 100%;
 }
@@ -42,7 +42,7 @@ nav ul {
 }
 
 nav a:hover {
-  color: #a50000;
+  color: #4066ff;
 }
 
 nav a {
@@ -52,10 +52,12 @@ nav a {
 .logo {
   font-size: 3rem;
   font-family: "Lobster", sans-serif;
+  text-shadow: 4px 4px #5c5c5c8a;
 }
 
 .mobile-logo {
   display: none;
+  text-shadow: 4px 4px #5c5c5c8a;
 }
 
 .search-hero {
@@ -80,7 +82,6 @@ nav a {
 
 .searchbox {
   display: flex;
-  z-index: 3;
   width: 50%;
   margin: 0 auto;
 }
@@ -110,52 +111,7 @@ nav a {
 .explore-area {
   text-align: center;
   line-height: 2.5em;
-}
-
-.movie-results {
-  padding-top: 22rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.movie {
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-.movie-info {
-  flex-direction: row;
-  line-height: 1.2rem;
-  text-align: left;
-  margin: 0.5rem;
-}
-
-.movie-info h3 {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.poster {
-  width: 50%;
-}
-
-.watchlist-btn {
-  margin-top: 0.5rem;
-  font-size: 1.3rem;
-  text-decoration: underline;
-}
-
-.watchlist-btn:hover {
-  color: #a50000;
-}
-
-.film {
-  margin-top: 3rem;
+  margin-bottom: 15rem;
 }
 
 .explore-area h2 {
@@ -163,23 +119,70 @@ nav a {
   font-weight: 500;
 }
 
-.watchlist {
+.movie-results {
+  padding-top: 21rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: auto;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem;
+  background-color: #525252;
   text-align: center;
-  line-height: 2.7rem;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.watchlist h2 {
-  font-size: 3rem;
+.poster {
+  height: 400px;
+  overflow: hidden;
 }
 
-.watchlist a {
+.movie-plot {
+  background-color: #00000088;
+  color: #ffff;
+  text-shadow: 2px 2px #00000094;
+  text-align: center;
+  height: 500px;
+  padding: 7rem 3rem;
+  display: none;
+}
+
+.poster:hover .movie-plot {
+  display: block;
+}
+
+.movie-info {
   color: #fff;
-  font-size: 1.7rem;
-  cursor: pointer;
+  padding-bottom: 0.7rem;
+}
+
+.movie-info h3 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5rem;
+  background-image: linear-gradient(0deg, #535353 0%, #000 100%);
+  padding: 0.2rem 0.3rem 0.5rem 0.3rem;
+}
+
+.movie-info p {
+  line-height: 1.2rem;
+}
+
+.watchlist-btn {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  text-decoration: underline;
+}
+
+.watchlist-btn:hover {
+  color: #728eff;
 }
 
 footer {
-  margin-top: 8rem;
   bottom: 0;
   width: 100%;
   padding: 0.3rem;
