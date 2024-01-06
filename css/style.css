@@ -134,6 +134,7 @@ nav a {
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 3px 3px 3px #000000;
 }
 
 .poster {
