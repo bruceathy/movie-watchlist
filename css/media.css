@@ -46,11 +46,13 @@
   .movie-results {
     display: flex;
     flex-direction: column;
+    padding-top: 1.5rem;
   }
 
   .movie {
     flex-direction: row;
     height: 200px;
+    width: 95%;
     text-align: center;
   }
 
@@ -74,7 +76,8 @@
   }
 
   .movie-info h3 {
-    line-height: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
   }
 }
 
@@ -87,8 +90,9 @@
   .movie {
     flex-direction: row;
     height: 200px;
+    width: 350px;
     text-align: center;
-    margin: 0.3rem;
+    margin: 0.3rem auto;
   }
 
   .poster {
