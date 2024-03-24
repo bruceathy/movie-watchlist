@@ -1,7 +1,8 @@
 const apiKey = "2880ab2f&";
 const search = document.getElementById("search");
 const searchBtn = document.getElementById("search-btn");
-let watchList = [];
+let watchList = document.getElementById("watchlist");
+let watchListArr = [];
 
 function fetchMovies(e) {
   document.getElementById("empty-search").style.display = "none";
@@ -39,10 +40,9 @@ function fetchMovies(e) {
 }
 
 function addToWatchlist(movie) {
-  watchList.push(movie);
-  // localStorage.setItem("watchlist-item", JSON.stringify(watchList));
-  console.log(localStorage.getItem("watchlist-item"));
-  renderWatchlist(watchList);
+  watchListArr.push(movie);
+  localStorage.setItem("watchlist-item", JSON.stringify(watchListArr));
+  renderWatchlist(JSON.parse(localStorage.getItem("watchlist-item")));
 }
 
 function renderWatchlist(list) {
@@ -67,8 +67,7 @@ function renderWatchlist(list) {
               </div>
             </div>
               `;
-        // document.getElementById("watchlist").innerHTML = watchlistEl;
-        console.log(watchlistEl);
+        document.getElementById("explore").innerHTML = watchlistEl;
       });
   }
 }
